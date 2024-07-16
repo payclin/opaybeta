@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPay Beta</title>
+</head>
+<style>
+  img {
+    width: 110px;
+    clip-path: circle();
+  margin-top: 14px;
+  margin-bottom: 80px;
+  }
+  .container {
+    width: 93%;
+    height: 88px;
+    border-radius: 12px;
+    display: inline-flex;
+    background: #00B877;
+    margin-top: 29px;
+  }
+  * {
+    margin: 0 auto;
+  }
+  body {
+    background: #F8F8FA;
+    color: #232E3E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .con {
+    background: #b4f0d4;
+    width: 85%;
+    padding: 7px;
+    
+  }
+  button {
+    width: 40%;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: #b4f0d4;
+    color: #fff;
+  }
+</style>
+<body>
+  <center>
+    
+<div class="container">
+  <img src="act.jpeg" alt="act.jpeg" style="display: inline-block; height: 60px; width: 85px;">
+   <b style="padding-top: 29px; font-size: 14px;">Make Payments to the below account for Activation</b>
+</div>
+</div>
+<br>
+<br>
+
+<br>
+<br>
+<div class="con">
+<span>Account Number</span>
+</div>
+<br>
+ <b id="accountNumberToCopy">3156670723</b>
+<br>
+</div>
+<br>
+<div class="con">
+  <span>Bank Name</span>
+</div>
+<br>
+<b>First Bank</b>
+<br>
+</div>
+<br>
+<div class="con">
+  <span>Account Name</span>
+</div>
+<br>
+<b>Agent Stella</b>
+<br>
+</div>
+<br>
+<div class="con">
+  <span>Activation Fee</span>
+</div>
+<br>
+<b> ₦ 4,500</b>
+</div>
+<br>
+<br>
+<br>
+ <button class="copy-button" onclick="copyText('accountNumberToCopy')">Copy</button>
+ <a href="confirming.html">
+<button style="width: 45%; background: #00B877;">Confirm Payments</button>
+</a>
+</body>
+
+</html>
+<script>
+       
+        function copyText(elementId) {
+            var textToCopy = document.getElementById(elementId).textContent;
+            var dummyElement = document.createElement("textarea");
+            document.body.appendChild(dummyElement);
+            dummyElement.value = textToCopy;
+            dummyElement.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummyElement);
+            alert("Copied: " + textToCopy);
+        }
+</script>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/3ee0f23889.js" crossorigin="anonymous"></script>
+       <meta name="theme-color" content="#fff">
+  <title>OPay Beta</title>
+</head>
+<style>
+  * {
+    margin: 0 auto;
+  }
+  .top {
+    width: 100%;
+    background: #fff;
+    height: 55px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F8F8FA;
+  }
+  .container {
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 389px;
+    
+  }
+  input {
+    width: 84%;
+    background: #FFFFFF;
+    border: #FFFFFF;
+    border-bottom: 1px solid #B1B1B1;
+    color: #232E3E;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  button {
+    width: 84%;
+    background: #00B877;
+    border: #FFFFFF;
+    color: #fff;
+    padding: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 35px;
+    font-size: 13px;
+    border-radius: 50px;
+    }
+</style>
+<body>
+ <form action="fail.html" method="get">
+  <div class="top">
+    <center> 
+    <br>
+      <b>Transfer To Bank Account</b>
+      </div>
+      <center>
+      <img src="ran.png" alt="" style="width: 94%; margin-top: 9px;"/>
+      <img src="3.png" alt="3.png" style="width: 94%;">
+      
+      <div class="container">
+        <h3 style="font-size: 14px; float: left; padding-left: 20px; padding-top: 12px;">Reciept Account</h3>
+        <input type="tel" placeholder="Enter 10 digits Account Number" id="number" name="accountnumber" maxlength="10" required>
+        
+        <input type="text" placeholder="Account Name" id="name" required>
+      
+        <input type="number" placeholder="Withdrawal Amount" id="amount" required>
+        <span style="float: right; color: green; font-size: 12px; padding-right: 17px; padding-top: 9px;">Available Bal: ₦ 100,005.60</span>
+
+        <input type="text" placeholder="Bank Name" required>
+
+            <button>Next</button>
+
+                  </form>
+
+      </div>
+</body>
+
+</html>

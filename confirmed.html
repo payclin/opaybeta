@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPay Beta</title>
+</head>
+<style>
+img {
+  width: 250px;
+}
+* {
+  margin: 0 auto;
+}
+  body {
+    background: #F8F8FA;
+    color: #232E3E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  button {
+      width: 40%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 14px;
+      font-size: 15px;
+      border-radius: 8px;
+      background: #00B877;
+      color: #fff;
+    }
+    </style>
+<body>
+  <a href="activate.html" style="text-decoration: none;
+  color: #00B877;
+  padding-top: 7px;
+  padding-right: 9px;
+  float: right;">Back</a>
+  <center>
+<img src="40.png" alt="">
+<h3>PAYMENTS WASNT CONFIRMED</h3>
+<br>
+<p style="font-size: 15px;" id="text"></p>
+
+<br>
+<br>
+<br>
+<a href="activate.html">
+<button>Make Payments</button>
+</a>
+</body>
+
+</html>
+<script>
+  const textElement = document.getElementById("text");
+  const text = "We didn't confirm any payments from your device Your account activation wasn't successful Kindly Go back and make your payments for your account to be unlocked So you can access the full features of the OPay Beta application & start using the OPay Beta Applications for transactions.";
+  let index = 0;
+  
+  setInterval(() => {
+    textElement.innerHTML += text[index];
+    index++;
+    if (index >= text.length) {
+      index = 0;
+    }
+  }, 100);
+</script>

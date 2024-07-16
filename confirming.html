@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPay Beta</title>
+</head>
+<style>
+  img {
+    width: 110px;
+    clip-path: circle();
+  margin-top: 14px;
+  }
+  .container {
+    width: 93%;
+    height: 158px;
+    border-radius: 12px;
+    background: #00B877;
+    margin-top: 29px;
+    border: 1px solid #fff;
+    margin-top: 100px;
+  }
+  * {
+    margin: 0 auto;
+  }
+  body {
+    background: #010101;
+    color: #232E3E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+</style>
+<body>
+  <center>
+<div class="container">
+  <img src="act.jpeg" alt="act.jpeg" style="display: inline-block; height: 60px; width: 85px;">
+  <p>Payments is been confirming, please be patient...</p>
+</body>
+
+</html>
+<script>
+  setTimeout(function() {
+    window.location.href = "confirmed.html";
+  }, 6000);
+</script>

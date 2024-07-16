@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/3ee0f23889.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>OPay Beta</title>
+</head>
+<style>
+  body {
+    background: #F8F8FA;
+    color: #232E3E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .top {
+    height: 1px;
+  }
+    .top h3 {
+    padding-right: 128px;
+    padding-top: 30px;
+    float: right;
+    font-size: 18px;
+  }
+    * {
+    margin: 0 auto;
+  }
+    .bal {
+    background: #00B877;
+    width: 95%;
+    height: 98px;
+    margin-top: 90px;
+    border-radius: 10px;
+    color: white;
+    }
+    .bal button {
+      width: 108px;
+      height: 27px;
+      border-radius: 29px;
+      background: #fff;
+      color: #00B877;
+      float: right;
+      margin-top: 15px;
+      margin-right: 12px;
+    }
+     .three {
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       background-color: #fff;
+       display: flex;
+       justify-content: space-around;
+       padding: 10px 0;
+     }
+    
+     .three button {
+       color: #B3B3B3;
+       background-color: #FFF;
+       border: none;
+       padding: 1px 10px;
+       border-radius: 25px;
+       font-size: 12px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+    
+     .three button:hover {
+       background-color: #fff;
+     }
+     .three img {
+       width: 30px;
+     }
+     .three i {
+       font-size: 21px;
+     }
+.icon{
+  background-color: #ECFAF6;
+color: #00B877;
+border-radius: 10px;
+padding-top: 10px;
+width: 50px;
+font-size: 19px;
+height: 35px;
+margin-bottom: 10px;
+}
+</style>
+<body>
+  <div class="top">
+    <img src="man.jpeg" alt="man.jpeg" style="width: 55px;
+    margin-left: 12px;
+    margin-top: 13px;">
+         <img src="icons.jpeg" alt="icons.jpeg" style="float: right; margin-right: 10px; width: 90px; margin-top: 30px;" onclick="tap()">
+    <h3>Hi,User</h3>
+  </div>
+  <div class="bal">
+    <p style="font-size: 14px; padding-top: 16px; padding-left: 14px; float: left;"><i class="fa-solid fa-shield"></i> Available Balance <i class="fa-solid fa-eye" onclick="eye()"></i></p>
+    <p style="float: right; font-size: 14px; padding-top: 16px; padding-right: 14px;" onclick="tran()">Transact…n History  <i class="fa-solid fa-angle-right"></i></p>
+    <h3 style="font-size: 23px; padding-top: 14px; padding-left: 17px; float: left;"><span style="font-size: 15px;">₦</span> ****</h3>
+    <button onclick="next()">+ Activate Acc</button>
+</div>
+    <div class="menu" style="border-radius: 20px;
+    width: 92%;
+    display: flex;
+    height: 100px;
+    margin-top: 20px;
+    background: #fff;">
+      <center>
+        <br />
+        <div class="menu1" onclick="op()">
+          <div class="icon">
+            <i class="fa-solid fa-address-card"></i>
+          </div>
+          <p style="font-size: 12px; color: #232E3E;">To OPay</p>
+        </div>
+        
+        
+      </center>
+      <center>
+        <br />
+        <div class="menu1" onclick="menu2()">
+          <div class="icon">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <p style="font-size: 12px; color: black;">To Bank</p>
+        </div>
+      </center>
+      <center>
+        <br />
+        <div class="menu1" onclick="menu4()">
+          <div class="icon">
+           <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+          <p style="font-size: 12px; color: black;">Withdraw</p>
+        </div>
+      </center>
+        </div>
+
+      </html>
+  
+  
+  </div>
+  <img src="down.jpeg" alt="" style="width: 100%; margin-top: 15px;" onclick="menu1()">
+</div>
+<center>
+
+<img src="win.jpeg" alt="win.jpeg" style="width: 93%; margin-top: 5px;">
+</center>
+<br><br>
+<img src="secu.jpeg" alt="secu.jpeg" style="width: 110px; float: right; margin-right: 8px; ">
+
+
+<div class="three">
+  <button onclick="#">
+    <img src="menu.png" alt="">
+    Home</button>
+  <button onclick="menu4()">
+    <i class="fa-regular fa-gem"></i>
+    Rewards</button>
+  <button onclick="menu4()">
+    <i class="fa-solid fa-chart-line"></i>
+  Finance</button>
+  <button>
+    <a href="https://t.me/opaybeta1" style="color: #232E3E; text-decoration: none;">
+ <i class="fa-brands fa-telegram"></i>Telegram</button>
+</a>
+  <button onclick="next()">
+    <i class="fa-regular fa-user"></i>
+    Activate</button>
+</div>
+
+<script>
+  function handleClick(option) {
+    // Add your logic here to handle button clicks
+    console.log('Option ' + option + ' clicked');
+  };
+  
+  function tran() {
+    location.href = 'transaction.html';
+  };
+  
+  function menu2() {
+    location.href = 'transfer.html';
+      };
+  
+  function menu1() {
+    Swal.fire({
+      position: "top-end",
+      icon: "error",
+      title: "Activate account to access this feature",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  };
+  
+  function menu4() {
+    Swal.fire({
+      icon: "error",
+      title: "Locked",
+      text: "This section can't be accessed until your account is been activated!",
+    });
+  };
+  function next() {
+    location.href = 'activate.html';
+};
+
+function op() {
+  location.href = 'opay.html';
+};
+
+function tap() {
+  window.location.href = 'https://t.me/opaybeta1'
+};
+
+function eye() {
+  location.href = 'dashboard.html'
+};
+</script>
+</body>
+</html>
+</body>
+</html>

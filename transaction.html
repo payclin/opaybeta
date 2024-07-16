@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/3ee0f23889.js" crossorigin="anonymous"></script>
+  <title>OPay Beta</title>
+</head>
+<style>
+  * {
+    margin: 0 auto;
+  }
+  body {
+    background: #F8F8FA;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #605c5c;
+
+  }
+  .top {
+    width: 99%;
+    background: #FFFFFF;
+    height: 120px;
+    border-radius: 20px;
+    margin-top: 7px;
+  }
+  .top p {
+    padding-top: 18px;
+    color: #605c5c;
+  }
+  .top b {
+    color: #605c5c;
+  }
+  .content {
+    width: 100%;
+    background: #FFFFFF;
+    margin-top: 10px;
+  }
+  .content h4 {
+    padding-left: 18px;
+    color: #232E3E;
+    padding-top: 8px;
+  }
+  .content p {
+    padding-left: 18px;
+    padding-top: 15px;
+  }
+  hr {
+    margin: 9px;
+  }
+  .three {
+       position: fixed;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       background-color: #fff;
+       display: flex;
+       justify-content: space-around;
+       padding: 10px 0;
+     }
+    
+     .three button {
+       color: #B3B3B3;
+       background-color: #FFF;
+       border: none;
+       padding: 1px 10px;
+       border-radius: 25px;
+       font-size: 18px;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+     }
+    
+     .three button:hover {
+       background-color: #F8F8FA;
+     }
+     .three img {
+       width: 30px;
+     }
+     .three i {
+       font-size: 20px;
+     }
+</style>
+<body>
+<div class="top">
+  <b style="float: left; padding-left: 23px; padding-top: 19px;"><span style="padding-right: 12px;"><i class="fa-solid fa-angle-left" style="font-size: 20px;" onclick="next()"></i></span> Transactions</b>
+  <b style="float: right; padding-right: 12px; padding-top: 18px; font-size: 22px; padding-right: 12px;"> <i class="fa-solid fa-cloud-arrow-down"></i></b>
+  <br><br><br>
+  <p style="float: left; padding-left: 36px;">All categories <i class="fa-solid fa-angle-down" style="padding-left: 5px;"></i></p>
+  <p style="float: right; padding-right: 67px;">All <i class="fa-solid fa-angle-down" style="padding-left: 5px;"></i></p>
+</div>
+
+<div class="content">
+  <h4>MAR <i class="fa-solid fa-angle-down" style="padding-left: 5px;"></i></h4>
+  <p>In: ₦200,061.21 <span style="padding-left: 15px;">Out: ₦100,000.00</span></p>
+  <hr>
+  
+  <br>
+  <img src="trans.png" alt="trans.png" style="float: left; width: 45px; margin-left: 14px;">
+  <p style="float: left; font-size: 12px; padding-top: 11px; padding-left: 7px; font-weight: bold;">Transfer To Ahmed Gba...</p>
+  <p style="float: right; font-size: 13px; color: #000; padding-top: 11px; padding-right: 5px; font-weight: bold;">- ₦7,000.00</p>
+    <p style="float: right; color: #000; font-size: 12px; padding-right: 2px;">Successful</p>
+
+  <br>
+  <br>
+  <br>
+  <img src="trans.png" alt="trans.png" style="float: left; width: 45px; margin-left: 14px;">
+  <p style="float: left; font-size: 13px; padding-top: 11px; padding-left: 7px;">Recieved From OPay Beta</p>
+  <p style="float: right; font-size: 13px; color: #000; padding-top: 11px; padding-right: 5px;">+ ₦100,021.60</p>
+  <p style="float: right; color: #000; font-size: 9px; padding-right: 8px;">Successful</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>  <br>
+  <br>
+  <br>
+  <marquee behavior="left" direction="left">After withdrawal of your current balance, you will be sent bonuses every day, you will also be given the access to play torns of games and win lot of cash and make withdrawals to your bank account without any charges.</marquee>
+  <br>
+  <br>
+
+
+  <br>
+  <br>
+  <div class="three">
+    <button onclick="handleClick(1)" style="color: #00B877; font-size: 14px;">
+<i class="fa-solid fa-arrow-right-arrow-left" style="background: #00B877; height: 25px; width: 30px; border-radius: 4px; color: white; padding-top: 4px; font-size: 17px;"></i>
+<br>
+      Transactions</button>
+    <button onclick="handleClick(2)" style="font-size: 14px;">
+      <i class="fa-solid fa-chart-pie"></i>
+      <br>
+      Statistics</button>
+</div>
+</div>
+</body>
+
+</html>
+<script>
+  function next() {
+    location.href = 'dashboard.html';
+  }
+</script>
