@@ -1,112 +1,263 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OPay Beta</title>
-</head>
-<style>
-  img {
-    width: 110px;
-    clip-path: circle();
-  margin-top: 14px;
-  margin-bottom: 80px;
-  }
-  .container {
-    width: 93%;
-    height: 88px;
-    border-radius: 12px;
-    display: inline-flex;
-    background: #00B877;
-    margin-top: 29px;
-  }
-  * {
-    margin: 0 auto;
-  }
-  body {
-    background: #F8F8FA;
-    color: #232E3E;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .con {
-    background: #b4f0d4;
-    width: 85%;
-    padding: 7px;
-    
-  }
-  button {
-    width: 40%;
-    padding: 14px;
-    font-size: 15px;
-    border-radius: 8px;
-    background: #b4f0d4;
-    color: #fff;
-  }
-</style>
-<body>
-  <center>
-    
-<div class="container">
-  <img src="act.jpeg" alt="act.jpeg" style="display: inline-block; height: 60px; width: 85px;">
-   <b style="padding-top: 29px; font-size: 14px;">Make Payments to the below account for Activation</b>
-</div>
-</div>
-<br>
-<br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ee0f23889.js" crossorigin="anonymous"></script>
+    <title>Earn Free</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
 
-<br>
-<br>
-<div class="con">
-<span>Account Number</span>
-</div>
-<br>
- <b id="accountNumberToCopy">3156670723</b>
-<br>
-</div>
-<br>
-<div class="con">
-  <span>Bank Name</span>
-</div>
-<br>
-<b>First Bank</b>
-<br>
-</div>
-<br>
-<div class="con">
-  <span>Account Name</span>
-</div>
-<br>
-<b>Agent Stella</b>
-<br>
-</div>
-<br>
-<div class="con">
-  <span>Activation Fee</span>
-</div>
-<br>
-<b> ₦ 4,500</b>
-</div>
-<br>
-<br>
-<br>
- <button class="copy-button" onclick="copyText('accountNumberToCopy')">Copy</button>
- <a href="confirming.html">
-<button style="width: 45%; background: #00B877;">Confirm Payments</button>
-</a>
-</body>
-
-</html>
-<script>
-       
-        function copyText(elementId) {
-            var textToCopy = document.getElementById(elementId).textContent;
-            var dummyElement = document.createElement("textarea");
-            document.body.appendChild(dummyElement);
-            dummyElement.value = textToCopy;
-            dummyElement.select();
-            document.execCommand("copy");
-            document.body.removeChild(dummyElement);
-            alert("Copied: " + textToCopy);
+           body {
+             background: #FFFFFF;
+             color: #4A4A4A;
+             font-family: 'Poppins', sans-serif;
+             margin: 0 auto;
+           }
+* {
+  font-family: 'Poppins', sans-serif;
+}
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 55px;
+            background-color: #f7f1ed;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
         }
-</script>
+        .item {
+            display: flex;
+            align-items: center;
+            color: #4d3eab;
+            text-align: left;
+            font-weight: bold;
+        }
+        .item svg {
+            margin-right: 5px;
+        }
+      .con {
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 10px;
+        width: 330px;
+        margin: 0 auto;
+      }
+      
+      .header strong {
+        color: #6b21a8;
+        float: right;
+        padding-top: 10px;
+        font-size: 20px;
+      }
+      
+      .header p {
+        color: #888;
+      }
+      
+      .transfer-details p {
+        margin: 2px 0;
+        padding-top: 8px;
+      }
+      
+      .bank-details {
+        background-color: #F8F7FE;
+        padding: 10px;
+        height: 195px;
+        text-align: left;
+        border-radius: 5px;
+        margin: 25px 0;
+      }
+      .copy-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px 0;
+      }
+      
+      .copy-con button {
+        background-color: #6b21a8;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        float: right;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+        margin-right: 15px;
+        cursor: pointer;
+        border: none;
+        position: relative;
+      }
+      
+      .copy-cont button:hover {
+        background-color: #581c87;
+      }
+      
+      .confirm-button {
+        background-color: #7B3FFC;
+        color: #fff;
+        border: none;
+        padding: 9px;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+      }
+      
+      .confirm-button:hover {
+        background-color: #581c87;
+      }
+        
+       .header img {
+         width: 50px;
+         display: flex;
+       } 
+       .popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #00B877;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.message {
+  display: none;
+}
+
+.message img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+          <i class="fa-solid fa-building-columns" style="padding-left: 19px; font-size: 13px;"></i>
+                  &nbsp;                 &nbsp; <p style="font-size: 17px;">Transfer</p>
+        </div>
+    </div>
+    </div>
+          <div class="con">
+            <div class="header">
+              <strong><b style="font-size: 13px; font-weight: lighter;">NGN</b> 4,500.00</strong>
+              <img src="f.png" alt="f.png">
+            </div>
+             <br>
+            <hr style="color: #F3F4F6;">
+            <center>
+            <div class="transfer-details">
+              <p>Transfer <strong>NGN 4,500.00</strong> from your bank to <strong> OPay Beta</strong> checkout</p>
+              <div class="bank-details">
+           <img src="palm.png" alt="" style="width: 40px; float: right; clip-path: circle(); margin-right: 11px; margin-top: 18px;">
+                <p>Bank</p>
+                <strong style="color: #000;">PalmPay</strong>
+                <p>Account Number</p>
+                <div class="copy-container">
+                  <strong id="accountNumber"  style="color: #000;">9157901631</strong>
+                  <button onclick="copyText('accountNumber')" style="color: #000;
+                  border: none;
+                  padding: 4px;
+                  float: right;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  float: right;
+                  margin-right: 9px;
+                  cursor: pointer;
+                  border: none;
+                  position: relative; width: 85px;
+                  background: #fff; font-size: 13px;
+                  border: 1px solid #ccc; border-radius: 8px;"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+                <p>Amount</p>
+                <div class="copy-container">
+                  <strong id="amount" style="color: #000;">NGN 4,500.00</strong>
+                  <button onclick="copyText('amount')" style="color: #000;
+                  border: none;
+                  padding: 4px;
+                  float: right;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  float: right;
+                  margin-right: 9px;
+                  cursor: pointer;
+                  border: none;
+                  position: relative; width: 85px;
+                  background: #fff; font-size: 13px;
+                  border: 1px solid #ccc; border-radius: 8px;"><i class="fa-regular fa-copy"></i> Copy</button>
+                </div>
+              </div>
+              <p style="font-size: 16px;">Ensure you send the exact amount indicated once</p>
+              <p style="font-size: 16px;">Once Payments is been confirmed you will get credited <strong>Immediately</strong></p>
+            </div>
+            <br>
+              <button class="confirm-button" onclick="showPopup()">I have sent NGN 4,500.00</button>
+            
+              <div id="popup-container" class="popup-container">
+                <div class="popup-content">
+        <div class="loader"></div>
+        <p>Confirming Payments, please wait...</p>
+        </div>
+                  <div id="message" class="message">
+                    <img src="path_to_image.jpg" alt="Success Image">
+                    <p>No Payments was confirmed</p>
+                  </div>
+                </div>
+              </div>
+          <hr style="color: #F3F4F6; padding-top: 0px; margin-top: 29px;">
+          <center>
+            <img src="dark.jpeg" alt="" style="width: 170px;">
+          </div>
+          
+             <script src="scripts.js"></script>
+</body> 
+<script>
+function showPopup() {
+  const popupContainer = document.getElementById('popup-container');
+  const loaderContainer = document.getElementById('loader-container');
+  const message = document.getElementById('message');
+
+  popupContainer.style.display = 'flex';
+
+  setTimeout(() => {
+    loaderContainer.style.display = 'none';
+    message.style.display = 'block';
+  }, 2000); // 2 seconds in milliseconds
+}
+  </script>
+</html>
