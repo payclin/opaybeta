@@ -68,12 +68,17 @@
 <p style="font-size: 19px;">Transfer Failed</p>
 <p style="font-size: 11px; padding-top: 12px;">This may be because your Beta account isn't yet activated</p>
 </div>
-<div class="container">
+<div class="container" onclick="next()">
   <i class="fa-solid fa-arrow-up-from-bracket"></i>
-  <p>Share Receipt</p>
+  <p>Activate Account</p>
 </div>
 <div class="container">
   <i class="fa-solid fa-user-plus"></i>
   <p>Add to favourite</p>
 </div>
 <img src="back.jpeg" alt="">
+<script>
+  function next() {
+    location.href = 'activate.html'
+  }
+</script>
